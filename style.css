@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/99/12/03/1000_F_199120338_ONDaxpROjeDPxD5kDaDt2gxoE0r40dvE.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: calc(var(--vh, 1vh) * 100);
+    font-family: 'Roboto', sans-serif;
+    background-color: #8e689a;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Game Container */
+#Game {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgba(247, 246, 244, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#Game:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #0056b3;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Form Styles */
+.form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Text Input Styles */
+input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    padding: 14px 28px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error Styles */
+.inputError {
+    border-color: #ff6b6b;
+}
+
+.inputError::placeholder {
+    color: #ff6b6b;
+}
+
+.inputError:focus {
+    border-color: #ff6b6b;
+}
+
+.inputError + .errorMsg {
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+/* Success Styles */
+.inputSuccess + .errorMsg {
+    display: none;
+}
+
+/* Result Paragraph Styles */
+.resultParas {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Guesses Styles */
+.guesses {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Last Result Styles */
+.lastResult {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+}
+
+/* Low/High Styles */
+.loworhigh {
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
